@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+</style>
+<title>
+Margaret Barbero 
+Professional Website
+</title>
+<link  rel="stylesheet" href="style_materialDesign.css">
+</head>
+<body>
+<!-- <div class ="header">
+<h1>
+Margaret Barbero 
+Professional Website
+</h1>
+<!-- <h2>
+About
+</h2>
+<p>
+Bioengineering graduate looking for career opportunities.
+</p> -->
+<div>
+<ul class = "leaves">
+<li><a href="workExpPage.html">Work Experience</a></li>
+<li class="dropdown"><a class="dropbtn"> Project</a>
+	<div class="dropdown-content">
+		<a href="CAD.html">CAD Projects</a>
+		<a href="BathTimePage.html">BathTime</a>
+	</div></li>
+  <li><a href="EducationPage.html">Education</a> </li>
+ <li><a href="TechSkills.html">Skills</a> </li>
+ <li> <a href= "TravelPage.html">Travel</a> </li>
+ <li><a href="Personal_website_materialDesign.html">Home</a> </li>
+</ul>
+</div>
+ 
+<!-- </div> -->
+ <div class="mySlides">
+<img src="https://static.pexels.com/photos/34950/pexels-photo.jpg">
+<h2>Welcome to Margaret's Personal Website!</h2>
+<p> The purpose of this website is to showcase my website development skills as well as my projects outside of work. Please explore the Project tab to see the variety of apps, 
+devices and other projects I am working on!  </p> 
+<div id="ContactInfo">
+<a href="ContactInfoPage.html"> Contact Info </a> 
+</div>
+</div>
+<div class="mySlides" >
+  <img src="https://static.pexels.com/photos/64778/pexels-photo-64778.jpeg" >
+    <a href="workExpPage.html">Work Experience</a>
+  </div>
+  
+  <div class="mySlides" >
+  <img src="https://static.pexels.com/photos/34592/pexels-photo.jpg" >
+   <a href="EducationPage.html">Education</a>
+  </div>
+  <div class="mySlides" >
+	<img  src="https://static.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg">
+	<a href="ProjectPage.html">Project</a>
+	</div>
+	<div class="mySlides" >
+	<img  src="https://static.pexels.com/photos/417344/pexels-photo-417344.jpeg">
+	<a href="ProjectPage.html">Travel</a>
+	</div>
+  <div class="NavStyle" style="width:100%">
+    <div class="LeftArrow" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="RightArrow" onclick="plusDivs(1)">&#10095;</div>
+    <!-- <span class="dots" onclick="currentDiv(1)">&#9675;</span>
+    <span class="dots" onclick="currentDiv(2)">&#9675;</span>
+    <span class="dots" onclick="currentDiv(3)">&#9675;</span> -->
+  </div>
+</div> 
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace("dotWhite", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += "dotWhite";
+}
+</script> 
+
+</body>
+</html>
