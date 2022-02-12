@@ -4,12 +4,12 @@ I created a website when I was developing my HTML/CSS skills.
 
 Pages: 
 - Main Page - slide show of different pages 
-- Education
+- Travel
 - Skills
+- Education
 - Projects 
     - CAD Projects
     - Data Engineering Project 
-- Travel
 - Work Experience
 
 
